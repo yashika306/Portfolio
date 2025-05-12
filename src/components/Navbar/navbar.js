@@ -27,9 +27,10 @@ const Navbar = () => {
   return (
     <Nav>
       <NavbarContainer>
-       <NavLogo to="/" style={{ color: "white" }}>
-  <DiCssdeck size="3rem" /> <Span style={{ paddingTop: "2px" }}>Portfolio</Span>
-</NavLogo>
+        <NavLogo to="/" style={{ color: "white" }}>
+          <DiCssdeck size="3rem" />{" "}
+          <Span style={{ paddingTop: "2px" }}>Portfolio</Span>
+        </NavLogo>
 
         <MobileIcon onClick={() => setIsOpen(!isOpen)}>
           <FaBars />
@@ -40,10 +41,15 @@ const Navbar = () => {
           <NavLink href="#experience">Experience</NavLink>
           <NavLink href="#projects">Projects</NavLink>
           <NavLink href="#education">Education</NavLink>
+          <NavLink href="#contact">Contact</NavLink>
         </NavItems>
         <ButtonContainer>
-          <GitHubButton href={Bio.Leetcode}><SiLeetcode /></GitHubButton>
-          <GitHubButton href={Bio.github}><FaGithub /></GitHubButton>
+          <GitHubButton href={Bio.Leetcode}>
+            <SiLeetcode />
+          </GitHubButton>
+          <GitHubButton href={Bio.github}>
+            <FaGithub />
+          </GitHubButton>
         </ButtonContainer>
         {isOpen && (
           <MobileMenu isOpen={isOpen}>
@@ -62,6 +68,9 @@ const Navbar = () => {
             <MobileLink href="#education" onClick={() => setIsOpen(false)}>
               Education
             </MobileLink>
+            <MobileLink href="#contact" onClick={() => setIsOpen(false)}>
+              Contact
+            </MobileLink>
 
             <GitHubButton
               style={{
@@ -73,7 +82,7 @@ const Navbar = () => {
               href={Bio.github}
               target="_blank"
             >
-             <FaGithub />
+              <FaGithub />
             </GitHubButton>
             <GitHubButton
               style={{
@@ -85,7 +94,7 @@ const Navbar = () => {
               href={Bio.github}
               target="_blank"
             >
-             <SiLeetcode />
+              <SiLeetcode />
             </GitHubButton>
           </MobileMenu>
         )}
