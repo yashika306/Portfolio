@@ -18,6 +18,7 @@ export const Bio = {
   linkedin: "https://www.linkedin.com/in/yashikaduthuluru/",
   Leetcode: "https://leetcode.com/u/yashika_duthuluru/",
   insta: "https://www.instagram.com/yashika_duthuluru/",
+  facebook:"https://www.facebook.com/share/1ESe13PEyd/",
 };
 
 export const skills = [
