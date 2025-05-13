@@ -5,6 +5,7 @@ import Talk_pic from '../images/TalkPic_pic.png';
 export const Bio = {
   name: "Yashika Duthuluru",
   roles: [
+    "Software Engineer",
     "Full Stack Developer",
     "UI/UX Designer",
     "Java Developer",
@@ -14,7 +15,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/yashika306",
   resume:
-    "https://drive.google.com/file/d/143obyfpaXylph0Knm9ykqMrEU081Movk/view?usp=drive_link",
+    "https://drive.google.com/file/d/1MvNiCRfYcBgLcbomKJ9qgd7MttQx2e3q/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/yashikaduthuluru/",
   Leetcode: "https://leetcode.com/u/yashika_duthuluru/",
   insta: "https://www.instagram.com/yashika_duthuluru/",
@@ -243,7 +244,7 @@ export const projects = [
     description:
       "TalkPic is a voice-driven AI-powered mobile application that generates real-time text and images based on spoken input. Built using React Native and Tailwind CSS, it integrates TTS and generative AI APIs to deliver dynamic content. The app emphasizes responsive design, reusable components, and a smooth, intuitive user experience across devices.",
     image: Talk_pic,
-    tags: ["React Native", "Tailwind CSS","Android Studio", "Teext To Speach (TTS)" , "ChatGpt and Dall-E API's"],
+    tags: ["React Native", "Tailwind CSS","Android Studio", "Text To Speach (TTS)" , "ChatGpt and Dall-E API's"],
     category: "android app",
     github: "https://github.com/yashika306/Talk_Pixs",
   },
