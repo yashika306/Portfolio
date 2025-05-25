@@ -7,7 +7,6 @@ export const Bio = {
   roles: [
     "Software Engineer",
     "Full Stack Developer",
-    "UI/UX Designer",
     "Java Developer",
     "Programmer",
   ],

@@ -14,7 +14,7 @@ import {
   ResumeButton,
 } from "./HeroStyledComponent";
 import HeroBgAnimation from '../HeroBgAnimation';
-import HeroImg from "../../images/Snap_pic.jpg";
+import HeroImg from "../../images/Brightened_Image.jpg";
 import Typewriter from "typewriter-effect";
 import { Bio } from "../../data/constant";
 
