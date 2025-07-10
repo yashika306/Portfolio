@@ -14,7 +14,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/yashika306",
   resume:
-    "https://drive.google.com/file/d/1MvNiCRfYcBgLcbomKJ9qgd7MttQx2e3q/view?usp=sharing",
+    "https://drive.google.com/file/d/1Rzl8PrIJin6bCx4DwIRd_azsm3gW7vWF/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/yashikaduthuluru/",
   Leetcode: "https://leetcode.com/u/yashika_duthuluru/",
   insta: "https://www.instagram.com/yashika_duthuluru/",
@@ -72,6 +72,10 @@ export const skills = [
       {
         name: "Node Js",
         image: "https://logodix.com/logo/1764882.png",
+      },
+      {
+        name: "Spring Boot",
+        image: "https://dz2cdn1.dzone.com/storage/temp/12434118-spring-boot-logo.png",
       },
       {
         name: "Express Js",
@@ -155,9 +159,8 @@ export const skills = [
         image: "https://iconape.com/wp-content/files/ja/89479/png/postman.png",
       },
       {
-        name: "Adobe XD",
-        image:
-          "https://cdn.freelogovectors.net/wp-content/uploads/2020/07/Adobe-xd-logo.png",
+        name: "Hibernate",
+        image: "https://toppng.com/uploads/preview/hibernate-logo-11609364227r2rk6gphuk.png",
       },
       {
         name: "Figma",
