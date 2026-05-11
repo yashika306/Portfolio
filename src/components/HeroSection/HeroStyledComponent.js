@@ -72,8 +72,8 @@ export const HeroRightContainer = styled.div`
   padding: 1px;
 
   .image-wrapper {
-    width: 300px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     padding: 5px;
     display: flex;
     justify-content: center;

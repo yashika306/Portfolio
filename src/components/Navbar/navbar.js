@@ -17,11 +17,12 @@ import { FaBars } from "react-icons/fa";
 import { Bio } from "../../data/constant";
 import { SiLeetcode } from "react-icons/si";
 import { FaGithub } from "react-icons/fa6";
+import { FaLinkedin } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const theme = {
-    primary: "#0f52ba", // or any color code you prefer
+    primary: "#0f52ba",
   };
 
   return (
@@ -44,6 +45,9 @@ const Navbar = () => {
           <NavLink href="#contact">Contact</NavLink>
         </NavItems>
         <ButtonContainer>
+          <GitHubButton href={Bio.linkedin}>
+            <FaLinkedin />
+          </GitHubButton>
           <GitHubButton href={Bio.Leetcode}>
             <SiLeetcode />
           </GitHubButton>
@@ -91,10 +95,22 @@ const Navbar = () => {
                 color: "white",
                 width: "max-content",
               }}
-              href={Bio.github}
+              href={Bio.Leetcode}
               target="_blank"
             >
               <SiLeetcode />
+            </GitHubButton>
+            <GitHubButton
+              style={{
+                padding: "10px 16px",
+                background: `${theme.primary}`,
+                color: "white",
+                width: "max-content",
+              }}
+              href={Bio.linkedin}
+              target="_blank"
+            >
+              < FaLinkedin />
             </GitHubButton>
           </MobileMenu>
         )}

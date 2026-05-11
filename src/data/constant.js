@@ -6,9 +6,8 @@ export const Bio = {
   name: "Yashika Duthuluru",
   roles: [
     "Software Engineer",
-    "Full Stack Developer",
-    "Java Developer",
-    "Programmer",
+    "Software Development Engineer In Test",
+    "Automation Engineer",
   ],
   description:
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
@@ -253,7 +252,7 @@ export const education = [
     school: "TKV Arts And Science College, Tiruttani",
     degree: "Bachelor of Computer Science",
     date: "2019 - 2022",
-    grade: "9.1 CGPA",
+    grade: "8.5 CGPA",
     desc: "Focused on full-stack development, participated in hackathons.",
   },
 ];
