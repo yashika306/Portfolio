@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Document = styled.img`
+const Document = styled.image`
     display: none;
     height: 70px;
     width: fit-content;
@@ -132,7 +132,7 @@ const EducationCard = ({ education }) => {
     return (
         <Card>
             <Top>
-                <Image src={education.img} />
+                <Image src={education.image} />
                 <Body>
                     <Name>{education.school}</Name>
                     <Degree>{education.degree}</Degree>

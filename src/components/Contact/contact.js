@@ -129,6 +129,7 @@ const Contact = () => {
   const form = useRef();
 
   const handleSubmit = (e) => {
+
     e.preventDefault();
     emailjs.sendForm('service_8ntmoim', 'template_4e7gpjc', form.current, 'BkW_lhFFkFn-SApqj')
       .then((result) => {
@@ -138,8 +139,6 @@ const Contact = () => {
         console.log(error.text);
       });
   }
-
-
 
   return (
     <Container id="contact">

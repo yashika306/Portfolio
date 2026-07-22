@@ -2,25 +2,65 @@ import ZSecureLogo from "../images/Z Secure Logo Design.png";
 import Portfolio_Project from '../images/Portfolio_Pic.png';
 import BookStore_Project from '../images/BookStore_Pic.png';
 import Talk_pic from '../images/TalkPic_pic.png';
+import Ticket_Classifier from '../images/Ticket_Classifier.png';
+import Spam_Email_Classifier from '../images/Spam_Email_Classifier.png';
+import TKV_College_Logo from '../images/TKV_College_logo.png';
+import psg_logo from '../images/psg_logo.png';
+import psg_College_logo from '../images/psg_College_logo.png';
 export const Bio = {
+
   name: "Yashika Duthuluru",
   roles: [
+    "AI Engineer",
+    "ML Engineer",
+    "Backend Developer",
     "Software Engineer",
-    "Software Development Engineer In Test",
-    "Automation Engineer",
   ],
   description:
-    "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
+    "AI/ML Engineer with hands-on experience building and deploying multi-agent AI systems using Google ADK, LangChain, and LangGraph, alongside classical ML/NLP projects in scikit-learn. Skilled in Python, prompt engineering, tool-calling architectures, and the Model Context Protocol (MCP), with a software engineering foundation in REST APIs, automation, and CI/CD. Passionate about shipping real AI products, not just studying them.",
   github: "https://github.com/yashika306",
   resume:
-    "https://drive.google.com/file/d/1Rzl8PrIJin6bCx4DwIRd_azsm3gW7vWF/view?usp=drive_link",
+    "https://drive.google.com/file/d/1e_mBaTO5xXA8xVSwYLT9jDe2Msmk0pyU/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/yashikaduthuluru/",
-  Leetcode: "https://leetcode.com/u/yashika_duthuluru/",
+  Leetcode: "https://leetcode.com/u/YashikaDuthuluru/",
   insta: "https://www.instagram.com/yashika_duthuluru/",
-  facebook:"https://www.facebook.com/share/1ESe13PEyd/",
+  facebook: "https://www.facebook.com/share/1ESe13PEyd/",
 };
 
 export const skills = [
+  {
+    title: "AI / LLM",
+    skills: [
+      {
+        name: "Google ADK",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/google/google-original.svg",
+      },
+      {
+        name: "LangChain",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-vl6Z3PeXvzmT62c8XXHf9HbKw4r3hNMPX6CooBaIgg&s=10",
+      },
+      {
+        name: "LangGraph",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+      },
+      {
+        name: "Gemini API",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/google/google-original.svg",
+      },
+      {
+        name: "Groq API",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+      },
+      {
+        name: "MCP (Model Context Protocol)",
+        image: "https://avatars.githubusercontent.com/u/182288589?s=200&v=4",
+      },
+      {
+        name: "Pydantic",
+        image: "https://raw.githubusercontent.com/pydantic/pydantic/main/docs/logo-white.svg",
+      },
+    ],
+  },
   {
     title: "Frontend",
     skills: [
@@ -40,13 +80,11 @@ export const skills = [
       },
       {
         name: "CSS",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
       },
       {
         name: "JavaScript",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
       },
       {
         name: "Bootstrap",
@@ -55,13 +93,11 @@ export const skills = [
       },
       {
         name: "Material UI",
-        image:
-          "https://static-00.iconduck.com/assets.00/material-ui-icon-2048x1626-on580ia9.png",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg",
       },
       {
         name: "Tailwind CSS",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png?20230715030042",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg",
       },
     ],
   },
@@ -70,25 +106,23 @@ export const skills = [
     skills: [
       {
         name: "Node Js",
-        image: "https://logodix.com/logo/1764882.png",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg",
       },
       {
-        name: "Spring Boot",
-        image: "https://dz2cdn1.dzone.com/storage/temp/12434118-spring-boot-logo.png",
+        name: "FastAPI",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/fastapi/fastapi-original.svg",
+      },
+      {
+        name: "Flask",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original.svg",
       },
       {
         name: "Express Js",
-        image:
-          "https://hackersandslackers-cdn.storage.googleapis.com/2020/05/express.png",
-      },
-      {
-        name: "Graph Ql",
-        image: "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg",
       },
       {
         name: "Rest API",
-        image:
-          "https://www.iexcel-technologies.com/wp-content/uploads/2020/03/rest-api-logo.png",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/fastapi/fastapi-original.svg",
       },
       {
         name: "MySQL",
@@ -96,8 +130,8 @@ export const skills = [
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
       },
       {
-        name: "Postgresql",
-        image: "https://www.postgresql.org/media/img/about/press/elephant.png",
+        name: "SQLite",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/sqlite/sqlite-original.svg",
       },
       {
         name: "MongoDB",
@@ -106,27 +140,24 @@ export const skills = [
       },
       {
         name: "Firebase",
-        image: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain.svg",
       },
     ],
   },
   {
-    title: "Android",
+    title: "Machine Learning",
     skills: [
       {
-        name: "Java",
-        image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+        name: "scikit-learn",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/scikitlearn/scikitlearn-original.svg",
       },
       {
-        name: "React Native",
-        image:
-          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
+        name: "Pandas",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg",
       },
       {
-        name: "Android Studio",
-        image:
-          "https://developer.android.com/static/studio/images/new-studio-logo-1_1920.png",
+        name: "NumPy",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg",
       },
     ],
   },
@@ -135,8 +166,7 @@ export const skills = [
     skills: [
       {
         name: "Git",
-        image:
-          "https://icons.veryicon.com/png/o/business/vscode-program-item-icon/git-13.png",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg",
       },
       {
         name: "GitHub",
@@ -150,21 +180,15 @@ export const skills = [
       },
       {
         name: "VS Code",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg",
       },
       {
         name: "Postman",
-        image: "https://iconape.com/wp-content/files/ja/89479/png/postman.png",
-      },
-      {
-        name: "Hibernate",
-        image: "https://toppng.com/uploads/preview/hibernate-logo-11609364227r2rk6gphuk.png",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg",
       },
       {
         name: "Figma",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg",
       },
     ],
   },
@@ -174,85 +198,166 @@ export const experiences = [
   {
     id: 0,
     img: ZSecureLogo,
-    role: "Associate Software Engineer",
-    company: "ZSecure - Zero Trust Security Labs",
-    date: "May 2024 - Jul 2025",
-    desc: `Automated internal workflows using Angular and Node.js, reducing manual effort by 40% and saving 15+ hours weekly for 50+ users.
-Developed and integrated RESTful APIs, enhancing system responsiveness by 30% and enabling smoother real-time interactions.
-Built a security assessment tool by integrating CVE databases, detecting 150+ high-risk vulnerabilities across 1,000+ applications.
-Optimized backend SQL queries, improving database efficiency and supporting 100K+ monthly user interactions, boosting system performance by 30%.
-Participated in Agile ceremonies (sprint planning, daily stand-ups, retrospectives), collaborating with cross-functional teams and stakeholders.
-Monitored system performance metrics, proactively identifying bottlenecks and escalating incidents to ensure uptime.
-Collaborated in cross-functional team discussions and decision-making processes to ensure effective solution implementation.`,
+    role: "Software Engineer",
+    company: "Zsecure",
+    date: "May 2024 - Dec 2024",
+    desc: `Automated internal workflows using Node.js, Selenium, and Python, reducing manual effort by 40% and saving 15+ hours weekly for 500+ users.
+Built and validated a CVE-integrated security risk assessment tool, detecting 150+ high-risk vulnerabilities across 1,000+ applications.
+Developed and executed test cases for REST APIs to validate functionality and edge cases.`,
     skills: [
-      "ReactJs",
-      "Angular",
-      "Mysql",
-      "supabase",
-      "JavaScript",
+      "Python",
       "Node Js",
-      "Express",
-      "Rest API",
       "Selenium",
+      "Rest API",
       "Git",
     ],
-    // doc: "https://media.licdn.com/dms/image/D4D2DAQFlp60ZqHuaFQ/profile-treasury-image-shrink_1280_1280/0/1691180828512?e=1692381600&v=beta&t=mM5Y_NE5EPlQhez5FAN6NLVSKcO_Ojt_9Gq3mnFGkAQ",
-  }
+  },
 ];
 
 export const projects = [
   {
     id: 0,
-    title: "Bookies",
-    // date: "Jun 2023 - Jul 2023",
+    title: "RAG HR Assistant",
     description:
-      "Bookies is a full-stack online bookstore web application built with the MERN stack. It allows users to browse and purchase books, manage their cart and wishlist, and securely log in using Google Authentication. The application offers a dynamic and user-friendly interface, with state managed through Redux and robust backend support using Node.js and MongoDB.",
+      "Retrieval-Augmented Generation (RAG) agent built on Google ADK that grounds answers strictly in a company HR policy document. Uses local embeddings (fastembed), ChromaDB for vector storage, and a tool-calling architecture with Gemini. Containerized with Docker and deployed live on Render at zero cost, including diagnosing and resolving a production memory issue.",
+    image: null,
+    tags: ["Python", "Google ADK", "RAG", "ChromaDB", "fastembed", "Gemini API", "Docker", "Render"],
+    category: "ai app",
+    github: "https://github.com/yashika306/RAG-HR-Assistant",
+    webapp: "https://rag-hr-assistant-fi2o.onrender.com",
+  },
+  {
+  id: 1,
+  title: "AI Customer Query Classifier",
+  description:
+    "Production-grade LLM classification system that sorts customer support tickets into 6 categories: Billing, Refunds, Technical Support, Delivery, Account Management, and General Inquiry. Built with PII redaction, prompt injection detection, and structured output validation using LangChain, LangGraph, Groq API, and Pydantic. Deployed live on Render.",
+  image: Ticket_Classifier,
+  tags: ["Python", "Flask", "LangChain", "LangGraph", "Groq API", "Pydantic", "Prompt Engineering", "Render"],
+  category: "ai app",
+  github: "https://github.com/yashika306/Ai-Customer-Query-Classifier",
+  webapp: "https://ai-customer-query-classifier.onrender.com/",
+},
+  {
+    id: 2,
+    title: "Google Maps AI Agent",
+    description:
+      "The same Google ADK maps assistant, powered by Gemini, built two ways to compare architectures: hand-written function tools vs. Model Context Protocol (MCP) integration. The MCP version cut agent code by over 80% while gaining new capabilities automatically.",
+    image: null,
+    tags: ["Python", "Google ADK", "Gemini API", "MCP", "Render"],
+    category: "ai app",
+    github: "https://github.com/yashika306/Google-Maps-Agent",
+    webapp: "https://google-maps-agent-8bk8.onrender.com",
+  },
+  {
+    id: 3,
+    title: "Healthcare MCP Server",
+    description:
+      "Custom MCP (Model Context Protocol) server exposing a SQLite patient database as 4 callable tools — schema discovery, SQL execution, risk scoring, and readmission scoring — to Claude Desktop over Streamable HTTP. Implements query-pattern validation that blocks destructive SQL keywords (INSERT/UPDATE/DELETE/DROP/ALTER) while preserving full read access.",
+    image: null,
+    tags: ["Python", "MCP", "SQLite", "Claude Desktop", "Streamable HTTP"],
+    category: "ai app",
+    github: "https://github.com/yashika306/healthcare-mcp-server",
+  },
+  {
+    id: 4,
+    title: "E-Commerce Multi-Agent System",
+    description:
+      "A 4-agent sequential system on Google ADK using one-way sub-agent handoffs (cart → checkout → order summary) instead of tool calls, so each stage fully owns the conversation. Uses ToolContext session state to keep every user's cart and order data isolated across concurrent sessions.",
+    image: null,
+    tags: ["Python", "Google ADK", "Gemini API", "Multi-Agent Systems", "Pydantic", "Render"],
+    category: "ai app",
+    github: "https://github.com/yashika306/ecommerce-multi-agent-system",
+    webapp: "https://ecommerce-multi-agent-system.onrender.com",
+  },
+  {
+    id: 5,
+    title: "Finance Assistant Agent",
+    description:
+      "Multi-agent personal finance assistant built with Google's Agent Development Kit (ADK). A root agent routes between direct LLM answers, a custom finance-data tool, and an investment sub-agent. Works around ADK's constraint against mixing custom and built-in tools in one agent by isolating Google Search grounding on a separate AgentTool for real-time market data.",
+    image: null,
+    tags: ["Python", "Google ADK", "Gemini API", "Multi-Agent Systems", "Function Calling", "Google Search Grounding"],
+    category: "ai app",
+    github: "https://github.com/yashika306/finance-assistant-agent",
+  },
+  {
+    id: 6,
+    title: "Spam Email Classifier",
+    description:
+      "End-to-end NLP application that classifies email and SMS messages as Spam or Ham using TF-IDF vectorization. Trained and compared Multinomial Naive Bayes and Logistic Regression models, evaluated using Accuracy, Precision, Recall, F1-Score, and Confusion Matrix. Built an interactive Streamlit web app for real-time predictions.",
+    image: Spam_Email_Classifier,
+    tags: [
+      "Python",
+      "scikit-learn",
+      "Pandas",
+      "NumPy",
+      "Streamlit",
+      "TF-IDF",
+      "NLP",
+      "Naive Bayes",
+      "Logistic Regression",
+    ],
+    category: "ml app",
+    github: "https://github.com/yashika306/Spam-Email-Classifier",
+    webapp: "https://spam-ham-email-classifier.streamlit.app/",
+  },
+  {
+    id: 7,
+    title: "Student Score Predictor",
+    description:
+      "Regression project predicting student math exam scores from demographic factors and reading/writing scores. Trained and compared 4 regression models — Linear Regression, Ridge, Decision Tree, and Random Forest — on the same 80/20 split. Linear Regression achieved the best R² of 0.88, outperforming the tree-based models due to the strongly linear relationship found during EDA.",
+    image: null,
+    tags: ["Python", "scikit-learn", "Pandas", "NumPy", "Regression"],
+    category: "ml app",
+    github: "https://github.com/yashika306/Student-Exam-Score-Predictor-Regression",
+  },
+  {
+    id: 8,
+    title: "Titanic Survival Predictor",
+    description:
+      "Binary classification ML model that predicts passenger survival on the Titanic. Built end-to-end: missing value imputation, feature engineering (family size, title extraction from names, deck extraction from cabin), label encoding, and model training. Compared Logistic Regression vs. Random Forest using accuracy, precision, recall, F1, and confusion matrix.",
+    image: null,
+    tags: ["Python", "scikit-learn", "Pandas", "NumPy", "Classification", "Feature Engineering"],
+    category: "ml app",
+    github: "https://github.com/yashika306/titanic-survival-predictor",
+  },
+  {
+    id: 9,
+    title: "Bookstore API",
+    description:
+      "RESTful API for a bookstore built with FastAPI and SQLite. Supports full CRUD operations, query filtering by author/genre/price, and data validation using Pydantic models. Designed with clean route structure and tested via Postman.",
     image: BookStore_Project,
-    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux", "Google Auth", "Rest API", "MVC Pattern"],
-    category: "web app",
+    tags: ["Python", "FastAPI", "SQLite", "Pydantic", "REST API"],
+    category: "Full Stack",
     github: "https://github.com/yashika306/Book_Store",
   },
   {
-    id: 1,
+    id: 10,
     title: "Portfolio",
-    // date: "Dec 2020 - Jan 2021",
     description:
-      "A responsive and scalable personal portfolio web application built with dynamic data rendering. It features dedicated sections including About, Skills, Experience, Education, and Projects, allowing easy updates and expansion. The footer includes contact details for professional outreach. The design ensures seamless performance across all screen sizes, providing an optimal viewing experience on mobile, tablet, and desktop devices.",
+      "A responsive and scalable personal portfolio web application built with dynamic data rendering. Features dedicated sections including About, Skills, Experience, Education, and Projects. Designed for seamless performance across mobile, tablet, and desktop devices.",
     image: Portfolio_Project,
     tags: ["React JS", "Material UI", "Styled Component"],
     category: "web app",
     github: "https://github.com/yashika306/Portfolio",
+    webapp: "https://yashika306.github.io/Portfolio/",
   },
-  {
-    id: 2,
-    title: "TalkPic",
-    // date: "Jan 2021",
-    description:
-      "TalkPic is a voice-driven AI-powered mobile application that generates real-time text and images based on spoken input. Built using React Native and Tailwind CSS, it integrates TTS and generative AI APIs to deliver dynamic content. The app emphasizes responsive design, reusable components, and a smooth, intuitive user experience across devices.",
-    image: Talk_pic,
-    tags: ["React Native", "Tailwind CSS","Android Studio", "Text To Speach (TTS)" , "ChatGpt and Dall-E API's"],
-    category: "android app",
-    github: "https://github.com/yashika306/Talk_Pixs",
-  }
 ];
 
 export const education = [
   {
     id: 1,
-    img:"https://www.pngfind.com/pngs/m/503-5039448_psg-college-of-technology-psg-college-of-technology.png",
-    school: "PSG College Of Technolgy, Coimbatore",
-    degree: "Master Of Computer Application ",
+    image: psg_College_logo,
+    school: "PSG College Of Technology, Coimbatore",
+    degree: "Master Of Computer Application",
     date: "2022 - 2024",
     grade: "7.01 CGPA",
-    desc: "Focused on full-stack development, participated in hackathons.",
   },
   {
     id: 2,
-    img:"https://th.bing.com/th/id/R.84987d6c1407006f6efbf91bba1f638c?rik=MfvkUiOcFZZ9nQ&riu=http%3a%2f%2fwww.tkvwomenscollege.com%2fwp-content%2fuploads%2f2020%2f04%2fCollege-logo-2-transparent-final-e1588172691152.png&ehk=HBCvzQ8HPJE0XbuM%2f3XyAyCX73GTDBZSZdnuMdVukvo%3d&risl=&pid=ImgRaw&r=0",
+    image: TKV_College_Logo,
     school: "TKV Arts And Science College, Tiruttani",
     degree: "Bachelor of Computer Science",
     date: "2019 - 2022",
     grade: "8.5 CGPA",
-    desc: "Focused on full-stack development, participated in hackathons.",
   },
 ];
