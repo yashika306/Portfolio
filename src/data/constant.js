@@ -7,6 +7,10 @@ import Spam_Email_Classifier from '../images/Spam_Email_Classifier.png';
 import TKV_College_Logo from '../images/TKV_College_logo.png';
 import psg_logo from '../images/psg_logo.png';
 import psg_College_logo from '../images/psg_College_logo.png';
+import Rag_HR from '../images/rag_hr_project.png';
+import healthcare_mcp_server from '../images/HealthCare_MCP.png';
+import Google_MCP_AI from '../images/Google_MCP_AI.png';
+
 export const Bio = {
 
   name: "Yashika Duthuluru",
@@ -220,7 +224,7 @@ export const projects = [
     title: "RAG HR Assistant",
     description:
       "Retrieval-Augmented Generation (RAG) agent built on Google ADK that grounds answers strictly in a company HR policy document. Uses local embeddings (fastembed), ChromaDB for vector storage, and a tool-calling architecture with Gemini. Containerized with Docker and deployed live on Render at zero cost, including diagnosing and resolving a production memory issue.",
-    image: null,
+    image: Rag_HR,
     tags: ["Python", "Google ADK", "RAG", "ChromaDB", "fastembed", "Gemini API", "Docker", "Render"],
     category: "ai app",
     github: "https://github.com/yashika306/RAG-HR-Assistant",
@@ -242,7 +246,7 @@ export const projects = [
     title: "Google Maps AI Agent",
     description:
       "The same Google ADK maps assistant, powered by Gemini, built two ways to compare architectures: hand-written function tools vs. Model Context Protocol (MCP) integration. The MCP version cut agent code by over 80% while gaining new capabilities automatically.",
-    image: null,
+    image: Google_MCP_AI,
     tags: ["Python", "Google ADK", "Gemini API", "MCP", "Render"],
     category: "ai app",
     github: "https://github.com/yashika306/Google-Maps-Agent",
@@ -253,7 +257,7 @@ export const projects = [
     title: "Healthcare MCP Server",
     description:
       "Custom MCP (Model Context Protocol) server exposing a SQLite patient database as 4 callable tools — schema discovery, SQL execution, risk scoring, and readmission scoring — to Claude Desktop over Streamable HTTP. Implements query-pattern validation that blocks destructive SQL keywords (INSERT/UPDATE/DELETE/DROP/ALTER) while preserving full read access.",
-    image: null,
+    image: healthcare_mcp_server,
     tags: ["Python", "MCP", "SQLite", "Claude Desktop", "Streamable HTTP"],
     category: "ai app",
     github: "https://github.com/yashika306/healthcare-mcp-server",
