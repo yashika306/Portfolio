@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.bf538fe7.css",
-    "main.js": "/Portfolio/static/js/main.444b0154.js",
+    "main.css": "/Portfolio/static/css/main.976dd8a2.css",
+    "main.js": "/Portfolio/static/js/main.1100daa4.js",
     "static/media/Z Secure Logo Design.png": "/Portfolio/static/media/Z Secure Logo Design.0f7aa523b6ef2b787f49.png",
     "static/media/BookStore_Pic.png": "/Portfolio/static/media/BookStore_Pic.c046805bc780dd95f623.png",
-    "static/media/TalkPic_pic.png": "/Portfolio/static/media/TalkPic_pic.428670b0d8991edea311.png",
     "static/media/Portfolio_Pic.png": "/Portfolio/static/media/Portfolio_Pic.a4486f2a477f679888b6.png",
     "static/media/yash-Pic.png": "/Portfolio/static/media/yash-Pic.8893bca70014b9e46572.png",
     "static/media/Google_MCP_AI.png": "/Portfolio/static/media/Google_MCP_AI.b7ea690851d8a6fa3f1d.png",
@@ -14,13 +13,12 @@
     "static/media/Spam_Email_Classifier.png": "/Portfolio/static/media/Spam_Email_Classifier.137bdd712febcd74c6ff.png",
     "static/media/TKV_College_logo.png": "/Portfolio/static/media/TKV_College_logo.ece09c3e8a2c20c458b2.png",
     "static/media/Ticket_Classifier.png": "/Portfolio/static/media/Ticket_Classifier.04b7cde349c276b73a98.png",
-    "static/media/psg_logo.png": "/Portfolio/static/media/psg_logo.32e13f1acd4b169e2e1a.png",
     "index.html": "/Portfolio/index.html",
-    "main.bf538fe7.css.map": "/Portfolio/static/css/main.bf538fe7.css.map",
-    "main.444b0154.js.map": "/Portfolio/static/js/main.444b0154.js.map"
+    "main.976dd8a2.css.map": "/Portfolio/static/css/main.976dd8a2.css.map",
+    "main.1100daa4.js.map": "/Portfolio/static/js/main.1100daa4.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf538fe7.css",
-    "static/js/main.444b0154.js"
+    "static/css/main.976dd8a2.css",
+    "static/js/main.1100daa4.js"
   ]
 }
