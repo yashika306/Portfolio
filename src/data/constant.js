@@ -1,18 +1,15 @@
 import ZSecureLogo from "../images/Z Secure Logo Design.png";
 import Portfolio_Project from '../images/Portfolio_Pic.png';
 import BookStore_Project from '../images/BookStore_Pic.png';
-import Talk_pic from '../images/TalkPic_pic.png';
 import Ticket_Classifier from '../images/Ticket_Classifier.png';
 import Spam_Email_Classifier from '../images/Spam_Email_Classifier.png';
 import TKV_College_Logo from '../images/TKV_College_logo.png';
-import psg_logo from '../images/psg_logo.png';
 import psg_College_logo from '../images/psg_College_logo.png';
 import Rag_HR from '../images/rag_hr_project.png';
 import healthcare_mcp_server from '../images/HealthCare_MCP.png';
 import Google_MCP_AI from '../images/Google_MCP_AI.png';
 
 export const Bio = {
-
   name: "Yashika Duthuluru",
   roles: [
     "AI Engineer",
@@ -221,6 +218,17 @@ Developed and executed test cases for REST APIs to validate functionality and ed
 export const projects = [
   {
     id: 0,
+    title: "AURUM — AI-Powered Revenue Recovery Engine",
+    description:
+      "Autonomous revenue recovery state machine built using LangGraph and Gemini 3.6 Flash to recover failed payments, checkout drop-offs, mandate failures, and B2B invoices. Features a 3-tier hybrid caching layer (Local Rules → JSON Cache → Live LLM API) reducing repeat latency to 0ms and cutting API token costs by 97%+. Deployed live on Google Cloud Run with custom merchant policy controls and real-time state streaming via WebSockets.",
+    image: null, // Link to your AURUM project image when ready
+    tags: ["FastAPI", "React", "TypeScript", "Gemini API", "LangGraph", "WebSockets", "Cloud Run", "Python"],
+    category: "ai app",
+    github: "https://github.com/yashika306/Razorpay-Aurum",
+    webapp: "https://aurum-1070790426798.us-central1.run.app",
+  },
+  {
+    id: 1,
     title: "RAG HR Assistant",
     description:
       "Retrieval-Augmented Generation (RAG) agent built on Google ADK that grounds answers strictly in a company HR policy document. Uses local embeddings (fastembed), ChromaDB for vector storage, and a tool-calling architecture with Gemini. Containerized with Docker and deployed live on Render at zero cost, including diagnosing and resolving a production memory issue.",
@@ -231,18 +239,18 @@ export const projects = [
     webapp: "https://rag-hr-assistant-fi2o.onrender.com",
   },
   {
-  id: 1,
-  title: "AI Customer Query Classifier",
-  description:
-    "Production-grade LLM classification system that sorts customer support tickets into 6 categories: Billing, Refunds, Technical Support, Delivery, Account Management, and General Inquiry. Built with PII redaction, prompt injection detection, and structured output validation using LangChain, LangGraph, Groq API, and Pydantic. Deployed live on Render.",
-  image: Ticket_Classifier,
-  tags: ["Python", "Flask", "LangChain", "LangGraph", "Groq API", "Pydantic", "Prompt Engineering", "Render"],
-  category: "ai app",
-  github: "https://github.com/yashika306/Ai-Customer-Query-Classifier",
-  webapp: "https://ai-customer-query-classifier.onrender.com/",
-},
-  {
     id: 2,
+    title: "AI Customer Query Classifier",
+    description:
+      "Production-grade LLM classification system that sorts customer support tickets into 6 categories: Billing, Refunds, Technical Support, Delivery, Account Management, and General Inquiry. Built with PII redaction, prompt injection detection, and structured output validation using LangChain, LangGraph, Groq API, and Pydantic. Deployed live on Render.",
+    image: Ticket_Classifier,
+    tags: ["Python", "Flask", "LangChain", "LangGraph", "Groq API", "Pydantic", "Prompt Engineering", "Render"],
+    category: "ai app",
+    github: "https://github.com/yashika306/Ai-Customer-Query-Classifier",
+    webapp: "https://ai-customer-query-classifier.onrender.com/",
+  },
+  {
+    id: 3,
     title: "Google Maps AI Agent",
     description:
       "The same Google ADK maps assistant, powered by Gemini, built two ways to compare architectures: hand-written function tools vs. Model Context Protocol (MCP) integration. The MCP version cut agent code by over 80% while gaining new capabilities automatically.",
@@ -253,7 +261,7 @@ export const projects = [
     webapp: "https://google-maps-agent-8bk8.onrender.com",
   },
   {
-    id: 3,
+    id: 4,
     title: "Healthcare MCP Server",
     description:
       "Custom MCP (Model Context Protocol) server exposing a SQLite patient database as 4 callable tools — schema discovery, SQL execution, risk scoring, and readmission scoring — to Claude Desktop over Streamable HTTP. Implements query-pattern validation that blocks destructive SQL keywords (INSERT/UPDATE/DELETE/DROP/ALTER) while preserving full read access.",
@@ -263,7 +271,7 @@ export const projects = [
     github: "https://github.com/yashika306/healthcare-mcp-server",
   },
   {
-    id: 4,
+    id: 5,
     title: "E-Commerce Multi-Agent System",
     description:
       "A 4-agent sequential system on Google ADK using one-way sub-agent handoffs (cart → checkout → order summary) instead of tool calls, so each stage fully owns the conversation. Uses ToolContext session state to keep every user's cart and order data isolated across concurrent sessions.",
@@ -274,17 +282,16 @@ export const projects = [
     webapp: "https://ecommerce-multi-agent-system.onrender.com",
   },
   {
-    id: 5,
+    id: 6,
     title: "Finance Assistant Agent",
     description:
       "Multi-agent personal finance assistant built with Google's Agent Development Kit (ADK). A root agent routes between direct LLM answers, a custom finance-data tool, and an investment sub-agent. Works around ADK's constraint against mixing custom and built-in tools in one agent by isolating Google Search grounding on a separate AgentTool for real-time market data.",
     image: null,
     tags: ["Python", "Google ADK", "Gemini API", "Multi-Agent Systems", "Function Calling", "Google Search Grounding"],
-    category: "ai app",
     github: "https://github.com/yashika306/finance-assistant-agent",
   },
   {
-    id: 6,
+    id: 7,
     title: "Spam Email Classifier",
     description:
       "End-to-end NLP application that classifies email and SMS messages as Spam or Ham using TF-IDF vectorization. Trained and compared Multinomial Naive Bayes and Logistic Regression models, evaluated using Accuracy, Precision, Recall, F1-Score, and Confusion Matrix. Built an interactive Streamlit web app for real-time predictions.",
@@ -305,7 +312,7 @@ export const projects = [
     webapp: "https://spam-ham-email-classifier.streamlit.app/",
   },
   {
-    id: 7,
+    id: 8,
     title: "Student Score Predictor",
     description:
       "Regression project predicting student math exam scores from demographic factors and reading/writing scores. Trained and compared 4 regression models — Linear Regression, Ridge, Decision Tree, and Random Forest — on the same 80/20 split. Linear Regression achieved the best R² of 0.88, outperforming the tree-based models due to the strongly linear relationship found during EDA.",
@@ -315,7 +322,7 @@ export const projects = [
     github: "https://github.com/yashika306/Student-Exam-Score-Predictor-Regression",
   },
   {
-    id: 8,
+    id: 9,
     title: "Titanic Survival Predictor",
     description:
       "Binary classification ML model that predicts passenger survival on the Titanic. Built end-to-end: missing value imputation, feature engineering (family size, title extraction from names, deck extraction from cabin), label encoding, and model training. Compared Logistic Regression vs. Random Forest using accuracy, precision, recall, F1, and confusion matrix.",
@@ -325,7 +332,7 @@ export const projects = [
     github: "https://github.com/yashika306/titanic-survival-predictor",
   },
   {
-    id: 9,
+    id: 10,
     title: "Bookstore API",
     description:
       "RESTful API for a bookstore built with FastAPI and SQLite. Supports full CRUD operations, query filtering by author/genre/price, and data validation using Pydantic models. Designed with clean route structure and tested via Postman.",
@@ -335,7 +342,7 @@ export const projects = [
     github: "https://github.com/yashika306/Book_Store",
   },
   {
-    id: 10,
+    id: 11,
     title: "Portfolio",
     description:
       "A responsive and scalable personal portfolio web application built with dynamic data rendering. Features dedicated sections including About, Skills, Experience, Education, and Projects. Designed for seamless performance across mobile, tablet, and desktop devices.",

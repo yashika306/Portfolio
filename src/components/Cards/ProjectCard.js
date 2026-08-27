@@ -1,146 +1,51 @@
 import React from "react";
-import styled from "styled-components";
-
-const Button = styled.button`
-  display: none;
-  width: 100%;
-  padding: 10px;
-  background-color: ${({ theme }) => theme.white};
-  color: ${({ theme }) => theme.text_black};
-  font-size: 14px;
-  font-weight: 700;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.8s ease-in-out;
-`;
-const Card = styled.div`
-  width: 330px;
-  height: 490px;
-  background-color: ${({ theme }) => theme.card};
-  cursor: pointer;
-  border-radius: 10px;
-  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.4);
-  overflow: hidden;
-  padding: 26px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  transition: all 0.5s ease-in-out;
-  &:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.6);
-    filter: brightness(1.1);
-  }
-  &:hover ${Button} {
-    display: block;
-  }
-`;
-
-const Image = styled.img`
-  width: 100%;
-  height: 180px;
-  background-color: ${({ theme }) => theme.white};
-  border-radius: 10px;
-  box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.3);
-`;
-
-const Tags = styled.div`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 4px;
-`;
-
-const Tag = styled.span`
-  font-size: 12px;
-  font-weight: 400;
-  color: ${({ theme }) => theme.primary};
-  background-color: ${({ theme }) => theme.primary + 15};
-  padding: 2px 8px;
-  border-radius: 10px;
-`;
-
-const Details = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  padding: 0px 2px;
-`;
-const Title = styled.div`
-  font-size: 20px;
-  font-weight: 600;
-  color: ${({ theme }) => theme.text_secondary};
-  overflow: hidden;
-  display: -webkit-box;
-  max-width: 100%;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-`;
-
-const Date = styled.div`
-  font-size: 12px;
-  margin-left: 2px;
-  font-weight: 400;
-  color: ${({ theme }) => theme.text_secondary + 80};
-  @media only screen and (max-width: 768px) {
-    font-size: 10px;
-  }
-`;
-
-const Description = styled.div`
-  font-weight: 400;
-  color: ${({ theme }) => theme.text_secondary + 99};
-  overflow: hidden;
-  margin-top: 8px;
-  display: -webkit-box;
-  max-width: 100%;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  text-overflow: ellipsis;
-`;
-
-// const Members = styled.div`
-//     display: flex;
-//     align-items: center;
-//     padding-left: 10px;
-// `
-// const Avatar = styled.img`
-//     width: 38px;
-//     height: 38px;
-//     border-radius: 50%;
-//     margin-left: -10px;
-//     background-color: ${({ theme }) => theme.white};
-//     box-shadow: 0 0 10px rgba(0,0,0,0.2);
-//     border: 3px solid ${({ theme }) => theme.card};
-// `
 
 const ProjectCard = ({ project, setOpenModal }) => {
   return (
-    <Card onClick={() => setOpenModal({ state: true, project: project })}>
-      <Image src={project.image} />
-      <Tags>
+    <div 
+      onClick={() => setOpenModal({ state: true, project: project })}
+      className="w-full h-[460px] bg-white/40 dark:bg-slate-900/30 backdrop-blur-md border border-slate-200/50 dark:border-slate-800/50 p-5 rounded-xl flex flex-col gap-3.5 cursor-pointer hover:-translate-y-2 hover:border-purple-500/30 hover:shadow-accent-glow/15 transition-all duration-300 overflow-hidden"
+    >
+      {/* Zoomable Image frame */}
+      <div className="w-full h-[180px] rounded-lg overflow-hidden shadow-sm relative">
+        {project.image ? (
+          <img 
+            src={project.image} 
+            alt={project.title} 
+            className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" 
+          />
+        ) : (
+          <div className="w-full h-full bg-slate-200/30 dark:bg-slate-800/30 flex items-center justify-center text-xs text-slate-400 dark:text-slate-550">
+            No Preview Available
+          </div>
+        )}
+      </div>
+
+      {/* Tags list */}
+      <div className="flex flex-wrap gap-1.5 items-center">
         {project.tags?.map((tag, index) => (
-          <Tag key={index}>{tag}</Tag>
+          <span 
+            key={index} 
+            className="text-[10px] font-medium px-2 py-0.5 rounded bg-purple-500/5 dark:bg-purple-500/10 border border-purple-500/10 text-purple-650 dark:text-purple-300"
+          >
+            {tag}
+          </span>
         ))}
-      </Tags>
-      <Details>
-        <Title>{project.title}</Title>
-        <Date>{project.date}</Date>
-        <Description>{project.description}</Description>
-      </Details>
-      {/* <Members>
-                {project.member?.map((member) => (
-                    <Avatar src={member.img}/>
-                ))}
-            </Members> */}
-      {/* <Button>View Project</Button> */}
-    </Card>
+      </div>
+
+      {/* Description details */}
+      <div className="flex flex-col gap-1.5">
+        <h3 className="text-base md:text-lg font-bold text-slate-800 dark:text-slate-105 line-clamp-2 leading-tight">
+          {project.title}
+        </h3>
+        <span className="text-[10px] md:text-xs text-slate-400 dark:text-slate-500">
+          {project.date}
+        </span>
+        <p className="text-xs md:text-sm text-slate-500 dark:text-slate-400 line-clamp-3 leading-relaxed mt-1">
+          {project.description}
+        </p>
+      </div>
+    </div>
   );
 };
 

@@ -1,107 +1,38 @@
 import React from "react";
-import styled from "styled-components";
-import Timeline from "@mui/lab/Timeline";
-import TimelineItem from "@mui/lab/TimelineItem";
-import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import TimelineConnector from "@mui/lab/TimelineConnector";
-import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineDot from "@mui/lab/TimelineDot";
-import { education, experiences } from "../../data/constant";
+import { education } from "../../data/constant";
 import EducationCard from "../Cards/EducationCard";
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-  align-items: center;
-  padding: 0px 0px 60px 0px;
-  @media (max-width: 960px) {
-    padding: 0px;
-  }
-`;
-
-const Wrapper = styled.div`
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  max-width: 1350px;
-  padding: 40px 0px 0px 0px;
-  gap: 12px;
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
-`;
-
-const Title = styled.div`
-  font-size: 42px;
-  text-align: center;
-  font-weight: 600;
-  margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
-  @media (max-width: 768px) {
-    margin-top: 12px;
-    font-size: 32px;
-  }
-`;
-
-const Desc = styled.div`
-  font-size: 18px;
-  text-align: center;
-  max-width: 600px;
-  color: ${({ theme }) => theme.text_secondary};
-  @media (max-width: 768px) {
-    margin-top: 12px;
-    font-size: 16px;
-  }
-`;
-
-const TimelineSection = styled.div`
-  width: 100%;
-  max-width: 1000px;
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  @media (max-width: 660px) {
-    align-items: end;
-  }
-`;
+import { motion } from "framer-motion";
 
 const EducationSection = () => {
   return (
-    <Container id="education">
-      <Wrapper>
-        <Title>Education</Title>
-        <Desc>
-          My education has been a journey of self-discovery and growth. My
-          educational details are as follows.
-        </Desc>
-        <TimelineSection>
-          <Timeline>
-           {education.map((education, index) => (
-                <TimelineItem key={education.id}>
-                <TimelineContent sx={{ py: "12px", px: 2 }}>
-                  <EducationCard education={education} />
-                </TimelineContent>
-                <TimelineSeparator>
-                  <TimelineDot variant="outlined" color="secondary" />
-                  {index !== education.length - 1 && (
-                    <TimelineConnector style={{ background: "#854CE6" }} />
-                  )}
-                </TimelineSeparator>
-              </TimelineItem>
+    <div id="education" className="h-full">
+      <div className="h-full bg-white/60 dark:bg-darkCard backdrop-blur-md border border-slate-200/80 dark:border-slate-800/80 rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-accent-glow/20 hover:border-purple-500/30 transition-all duration-300">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="flex flex-col h-full"
+        >
+          <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-2 text-center md:text-left">Education</h2>
+          <p className="text-slate-600 dark:text-slate-400 text-sm mb-8 text-center md:text-left">
+            My education has been a journey of growth and academic learning.
+          </p>
+          
+          <div className="relative pl-6 md:pl-8 border-l border-purple-500/30 flex flex-col gap-6">
+            {education.map((edu, index) => (
+              <div key={edu.id} className="relative">
+                {/* Timeline Dot */}
+                <div className="absolute -left-[31px] md:-left-[39px] top-1.5 w-4 h-4 rounded-full border-[3px] border-purple-600 dark:border-purple-400 bg-slate-50 dark:bg-darkBg shadow-accent-glow"></div>
+                
+                {/* Education Card */}
+                <EducationCard education={edu} />
+              </div>
             ))}
-          </Timeline>
-        </TimelineSection>
-      </Wrapper>
-    </Container>
+          </div>
+        </motion.div>
+      </div>
+    </div>
   );
 };
 

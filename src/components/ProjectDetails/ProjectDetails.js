@@ -1,133 +1,7 @@
-import { CloseRounded, GitHub, LinkedIn } from "@mui/icons-material";
+import { CloseRounded } from "@mui/icons-material";
 import { Modal } from "@mui/material";
 import React from "react";
-import styled from "styled-components";
-
-const Container = styled.div`
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #000000a7;
-  display: flex;
-  align-items: top;
-  justify-content: center;
-  overflow-y: scroll;
-  transition: all 0.5s ease;
-`;
-
-const Wrapper = styled.div`
-  max-width: 800px;
-  width: 100%;
-  border-radius: 16px;
-  margin: 50px 12px;
-  height: min-content;
-  background-color: ${({ theme }) => theme.card};
-  color: ${({ theme }) => theme.text_primary};
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-`;
-
-const Title = styled.div`
-  font-size: 28px;
-  font-weight: 600;
-  color: ${({ theme }) => theme.text_primary};
-  margin: 8px 6px 0px 6px;
-  @media only screen and (max-width: 600px) {
-    font-size: 24px;
-    margin: 6px 6px 0px 6px;
-  }
-`;
-
-const Date = styled.div`
-  font-size: 16px;
-  margin: 2px 6px;
-  font-weight: 400;
-  color: ${({ theme }) => theme.text_secondary};
-  @media only screen and (max-width: 768px) {
-    font-size: 12px;
-  }
-`;
-
-const Desc = styled.div`
-  font-size: 16px;
-  font-weight: 400;
-  color: ${({ theme }) => theme.text_primary};
-  margin: 8px 6px;
-  @media only screen and (max-width: 600px) {
-    font-size: 14px;
-    margin: 6px 6px;
-  }
-`;
-
-const Image = styled.img`
-  width: 100%;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-top: 30px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-`;
-
-const Tags = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  margin: 8px 0px;
-  @media only screen and (max-width: 600px) {
-    margin: 4px 0px;
-  }
-`;
-
-const Tag = styled.div`
-  font-size: 14px;
-  font-weight: 400;
-  color: ${({ theme }) => theme.primary};
-  margin: 4px;
-  padding: 4px 8px;
-  border-radius: 8px;
-  background-color: ${({ theme }) => theme.primary + 20};
-  @media only screen and (max-width: 600px) {
-    font-size: 12px;
-  }
-`;
-
-const ButtonGroup = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  margin: 12px 0px;
-  gap: 12px;
-`;
-
-const Button = styled.a`
-  width: 100%;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 600;
-  color: ${({ theme }) => theme.text_primary};
-  padding: 12px 16px;
-  border-radius: 8px;
-  background-color: ${({ theme }) => theme.primary};
-  ${({ dull, theme }) =>
-    dull &&
-    `
-        background-color: ${theme.bgLight};
-        color: ${theme.text_secondary};
-        &:hover {
-            background-color: ${({ theme }) => theme.bg + 99};
-        }
-    `}
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.5s ease;
-  &:hover {
-    background-color: ${({ theme }) => theme.primary + 99};
-  }
-  @media only screen and (max-width: 600px) {
-    font-size: 12px;
-  }
-`;
+import { logClick } from "../../utils/analytics";
 
 const ProjectDetails = ({ openModal, setOpenModal }) => {
   const project = openModal?.project;
@@ -136,41 +10,72 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
       open={true}
       onClose={() => setOpenModal({ state: false, project: null })}
     >
-      <Container>
-        <Wrapper>
-          <CloseRounded
-            style={{
-              position: "absolute",
-              top: "10px",
-              right: "20px",
-              cursor: "pointer",
-            }}
-            onClick={() => setOpenModal({ state: false, project: null })}
-          />
+      <div className="fixed inset-0 z-[100] w-full h-full bg-[#030306]/70 backdrop-blur-md flex items-start justify-center overflow-y-auto transition-all duration-300 p-4 pt-12">
+        <div className="relative max-w-[800px] w-full bg-slate-50 dark:bg-[#0C0C1E] border border-slate-200/80 dark:border-slate-800/80 rounded-2xl p-6 shadow-2xl flex flex-col gap-4">
+          
+          <button 
+            onClick={() => setOpenModal({ state: false, project: null })} 
+            className="absolute top-4 right-4 text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-white cursor-pointer select-none"
+          >
+            <CloseRounded />
+          </button>
 
-          {project?.image && <Image src={project.image} />}
+          {project?.image && (
+            <img 
+              src={project.image} 
+              alt={project.title} 
+              className="w-full max-h-[350px] object-cover rounded-xl shadow-md border border-slate-200/20 dark:border-slate-800/20" 
+            />
+          )}
 
-          <Title>{project?.title}</Title>
-          <Date>{project?.date}</Date>
-          <Tags>
+          <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 dark:text-white mt-2 leading-snug">
+            {project?.title}
+          </h2>
+          
+          <span className="text-xs md:text-sm text-slate-400 dark:text-slate-500 font-medium">
+            {project?.date}
+          </span>
+          
+          <div className="flex flex-wrap gap-1.5 items-center my-2">
             {project?.tags.map((tag, index) => (
-              <Tag key={index}>{tag}</Tag>
+              <span 
+                key={index} 
+                className="text-xs font-semibold px-2.5 py-1 rounded-md bg-purple-500/5 dark:bg-purple-500/10 border border-purple-500/10 text-purple-650 dark:text-purple-300"
+              >
+                {tag}
+              </span>
             ))}
-          </Tags>
-          <Desc>{project?.description}</Desc>
-          <ButtonGroup>
-            <Button href={project?.github} target="_blank">
+          </div>
+
+          <p className="text-sm md:text-base text-slate-650 dark:text-slate-355 leading-relaxed">
+            {project?.description}
+          </p>
+
+          <div className="flex justify-end gap-3 mt-6 border-t border-slate-200/40 dark:border-slate-800/40 pt-4">
+            <a 
+              href={project?.github} 
+              target="_blank" 
+              rel="noreferrer"
+              onClick={() => logClick(`ProjectCode_${project?.title}`, project?.github)}
+              className="w-full sm:w-auto text-center text-slate-700 dark:text-slate-200 font-semibold px-6 py-2.5 rounded-xl bg-slate-200/40 dark:bg-white/5 border border-slate-300/40 dark:border-white/5 hover:bg-slate-200/80 dark:hover:bg-white/10 cursor-pointer transition-all duration-200"
+            >
               View Code
-            </Button>
+            </a>
 
             {project?.webapp && (
-              <Button href={project.webapp} target="_blank">
+              <a 
+                href={project.webapp} 
+                target="_blank" 
+                rel="noreferrer"
+                onClick={() => logClick(`ProjectLive_${project?.title}`, project?.webapp)}
+                className="w-full sm:w-auto text-center text-white font-semibold px-6 py-2.5 rounded-xl bg-gradient-to-r from-purple-500 to-indigo-500 hover:shadow-accent-glow hover:translate-y-[-1px] cursor-pointer transition-all duration-300"
+              >
                 View Live
-              </Button>
+              </a>
             )}
-          </ButtonGroup>
-        </Wrapper>
-      </Container>
+          </div>
+        </div>
+      </div>
     </Modal>
   );
 };
