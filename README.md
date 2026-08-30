@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# 🍱 Modern Bento Grid Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive, high-performance developer portfolio built for **Yashika Duthuluru (AI/ML & Backend Software Engineer)**. The application features a modern Bento Grid design styled entirely with **Tailwind CSS**, smooth micro-animations, theme toggling, and integrated interaction tracking via **Google Analytics 4**.
 
-## Available Scripts
+Live website: 👉 **[yashika306.github.io/Portfolio](https://yashika306.github.io/Portfolio)**
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Bento Grid Layout**: A highly structured grid system that organizes information (Hero, Skills, Experience, Education, Projects, Contact) into clean, modular blocks.
+- **Glassmorphism Design**: Frosted panels featuring border highlights, hover scaling, and ambient pulsing background glow elements.
+- **Dark & Light Mode Switcher**: Toggles theme values globally across the layout by updating document class lists.
+- **Micro-Animations**: Staggered card entry animations and transitions powered by `framer-motion`.
+- **Google Analytics 4 Integration**: Lightweight custom tracking that logs pageviews, outbound social links clicks, resume downloads, modal link clicks, and contact form submissions.
+- **EmailJS Form integration**: Sends emails from the Contact section straight to the mailbox with validation and completion indicators.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Built With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Framework**: [React](https://react.dev/)
+- **Style System**: [Tailwind CSS v3](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Email Service**: [EmailJS](https://www.emailjs.com/)
+- **Icons**: [React Icons](https://react-icons.github.io/react-icons/) & [MUI Icons](https://mui.com/material-ui/material-icons/)
+- **Analytics**: [React GA4](https://github.com/sjmc11/react-ga4)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Make sure you have Node.js installed on your machine.
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yashika306/Portfolio.git
+   cd Portfolio
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Install the dependencies:
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Start the local development server:
+   ```bash
+   npm start
+   ```
+   Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 📊 Analytics Configuration
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Google Analytics tracks events automatically. If no ID is configured, the tracker logs event actions to the console in **simulation mode** for debugging.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To activate production tracking, create a `.env` file at the root of the project:
 
-### Code Splitting
+```env
+REACT_APP_GA_MEASUREMENT_ID=G-YOUR_MEASUREMENT_ID
+```
+*(Replace `G-YOUR_MEASUREMENT_ID` with your Google Analytics 4 Measurement ID).*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 📦 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The portfolio is set up to deploy straight to GitHub Pages using the `gh-pages` package.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To build and deploy the live version in one step, run:
+```bash
+npm run deploy
+```
+This automatically compiles the codebase, minifies assets, optimizes Tailwind CSS, and pushes to the deployment branch.
