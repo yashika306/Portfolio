@@ -1,6 +1,9 @@
-# 🍱 Modern Bento Grid Portfolio
+# 🍱 Yashika Duthuluru - Developer Portfolio
 
-A responsive, high-performance developer portfolio built for **Yashika Duthuluru (AI/ML & Backend Software Engineer)**. The application features a modern Bento Grid design styled entirely with **Tailwind CSS**, smooth micro-animations, theme toggling, and integrated interaction tracking via **Google Analytics 4**.
+AI/ML Engineer with hands-on experience building and deploying multi-agent AI systems using Google ADK, LangChain, and LangGraph, alongside classical ML/NLP projects in scikit-learn. Skilled in Python, prompt engineering, tool-calling architectures, and the Model Context Protocol (MCP), with a software engineering foundation in REST APIs, automation, and CI/CD. Passionate about shipping real AI products, not just studying them.
+
+This application features a modern Bento Grid design styled entirely with **Tailwind CSS**, smooth micro-animations, theme toggling, and integrated interaction tracking via **Google Analytics 4**.
+
 
 Live website: 👉 **[yashika306.github.io/Portfolio](https://yashika306.github.io/Portfolio)**
 
