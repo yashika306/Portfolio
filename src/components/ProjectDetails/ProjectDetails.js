@@ -40,14 +40,14 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
             {project?.tags.map((tag, index) => (
               <span 
                 key={index} 
-                className="text-xs font-semibold px-2.5 py-1 rounded-md bg-purple-500/5 dark:bg-purple-500/10 border border-purple-500/10 text-purple-650 dark:text-purple-300"
+                className="text-xs font-semibold px-2.5 py-1 rounded-md bg-purple-500/5 dark:bg-purple-500/10 border border-purple-500/10 text-purple-600 dark:text-purple-300"
               >
                 {tag}
               </span>
             ))}
           </div>
 
-          <p className="text-sm md:text-base text-slate-650 dark:text-slate-355 leading-relaxed">
+          <p className="text-sm md:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
             {project?.description}
           </p>
 

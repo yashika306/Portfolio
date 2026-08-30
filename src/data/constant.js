@@ -8,7 +8,7 @@ import psg_College_logo from '../images/psg_College_logo.png';
 import Rag_HR from '../images/rag_hr_project.png';
 import healthcare_mcp_server from '../images/HealthCare_MCP.png';
 import Google_MCP_AI from '../images/Google_MCP_AI.png';
-
+import Aurum from '../images/Aurum.png';
 export const Bio = {
   name: "Yashika Duthuluru",
   roles: [
@@ -221,7 +221,7 @@ export const projects = [
     title: "AURUM — AI-Powered Revenue Recovery Engine",
     description:
       "Autonomous revenue recovery state machine built using LangGraph and Gemini 3.6 Flash to recover failed payments, checkout drop-offs, mandate failures, and B2B invoices. Features a 3-tier hybrid caching layer (Local Rules → JSON Cache → Live LLM API) reducing repeat latency to 0ms and cutting API token costs by 97%+. Deployed live on Google Cloud Run with custom merchant policy controls and real-time state streaming via WebSockets.",
-    image: null, // Link to your AURUM project image when ready
+    image: Aurum,
     tags: ["FastAPI", "React", "TypeScript", "Gemini API", "LangGraph", "WebSockets", "Cloud Run", "Python"],
     category: "ai app",
     github: "https://github.com/yashika306/Razorpay-Aurum",

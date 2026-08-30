@@ -15,7 +15,7 @@ const ProjectCard = ({ project, setOpenModal }) => {
             className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" 
           />
         ) : (
-          <div className="w-full h-full bg-slate-200/30 dark:bg-slate-800/30 flex items-center justify-center text-xs text-slate-400 dark:text-slate-550">
+          <div className="w-full h-full bg-slate-200/30 dark:bg-slate-800/30 flex items-center justify-center text-xs text-slate-400 dark:text-slate-500">
             No Preview Available
           </div>
         )}
@@ -26,7 +26,7 @@ const ProjectCard = ({ project, setOpenModal }) => {
         {project.tags?.map((tag, index) => (
           <span 
             key={index} 
-            className="text-[10px] font-medium px-2 py-0.5 rounded bg-purple-500/5 dark:bg-purple-500/10 border border-purple-500/10 text-purple-650 dark:text-purple-300"
+            className="text-[10px] font-medium px-2 py-0.5 rounded bg-purple-500/5 dark:bg-purple-500/10 border border-purple-500/10 text-purple-600 dark:text-purple-300"
           >
             {tag}
           </span>
@@ -35,7 +35,7 @@ const ProjectCard = ({ project, setOpenModal }) => {
 
       {/* Description details */}
       <div className="flex flex-col gap-1.5">
-        <h3 className="text-base md:text-lg font-bold text-slate-800 dark:text-slate-105 line-clamp-2 leading-tight">
+        <h3 className="text-base md:text-lg font-bold text-slate-800 dark:text-slate-100 line-clamp-2 leading-tight">
           {project.title}
         </h3>
         <span className="text-[10px] md:text-xs text-slate-400 dark:text-slate-500">
