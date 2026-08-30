@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.976dd8a2.css",
-    "main.js": "/Portfolio/static/js/main.1100daa4.js",
+    "main.js": "/Portfolio/static/js/main.5aa97704.js",
     "static/media/Z Secure Logo Design.png": "/Portfolio/static/media/Z Secure Logo Design.0f7aa523b6ef2b787f49.png",
     "static/media/BookStore_Pic.png": "/Portfolio/static/media/BookStore_Pic.c046805bc780dd95f623.png",
     "static/media/Portfolio_Pic.png": "/Portfolio/static/media/Portfolio_Pic.a4486f2a477f679888b6.png",
     "static/media/yash-Pic.png": "/Portfolio/static/media/yash-Pic.8893bca70014b9e46572.png",
+    "static/media/Aurum.png": "/Portfolio/static/media/Aurum.a501c51597780933f169.png",
     "static/media/Google_MCP_AI.png": "/Portfolio/static/media/Google_MCP_AI.b7ea690851d8a6fa3f1d.png",
     "static/media/HealthCare_MCP.png": "/Portfolio/static/media/HealthCare_MCP.bfa41a5b77ef84015e14.png",
     "static/media/psg_College_logo.png": "/Portfolio/static/media/psg_College_logo.65d18ec5654e6fe06c50.png",
@@ -15,10 +16,10 @@
     "static/media/Ticket_Classifier.png": "/Portfolio/static/media/Ticket_Classifier.04b7cde349c276b73a98.png",
     "index.html": "/Portfolio/index.html",
     "main.976dd8a2.css.map": "/Portfolio/static/css/main.976dd8a2.css.map",
-    "main.1100daa4.js.map": "/Portfolio/static/js/main.1100daa4.js.map"
+    "main.5aa97704.js.map": "/Portfolio/static/js/main.5aa97704.js.map"
   },
   "entrypoints": [
     "static/css/main.976dd8a2.css",
-    "static/js/main.1100daa4.js"
+    "static/js/main.5aa97704.js"
   ]
 }
