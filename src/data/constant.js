@@ -14,8 +14,8 @@ export const Bio = {
   roles: [
     "AI Engineer",
     "ML Engineer",
-    "Backend Developer",
-    "Software Engineer",
+    "Generative AI Engineer",
+    "AI Agent Developer",
   ],
   description:
     "AI/ML Engineer with hands-on experience building and deploying multi-agent AI systems using Google ADK, LangChain, and LangGraph, alongside classical ML/NLP projects in scikit-learn. Skilled in Python, prompt engineering, tool-calling architectures, and the Model Context Protocol (MCP), with a software engineering foundation in REST APIs, automation, and CI/CD. Passionate about shipping real AI products, not just studying them.",
